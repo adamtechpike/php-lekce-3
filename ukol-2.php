@@ -1,3 +1,10 @@
+<?php
+
+$radek= 1 ;
+$soucet = 1 ;
+$maximum = 5 ;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,13 +23,23 @@
 
 
     <table class="table table-bordered">
+
+<?php
+
+while ($radek <= $maximum) {
+   
+   echo '
         <tr>
-            <td>prvni sloupec</td>
-            <td>druhy sloupec</td>
+            <td>' . $radek . '</td>
+            <td>' . $soucet . '</td>
         </tr>
-    </table>
+';
 
-
+$radek = $radek + 1;
+$soucet = $soucet + $radek;
+}
+?>
+</table>
 
 
 </div>
